@@ -40,7 +40,7 @@ We have used the following libraries.
 
 1. Download and install [Node.js](https://nodejs.org/en/download/).
 2. Download and install [Git](https://git-scm.com/downloads).
-3. Clone [this](https://github.com/oneTakeda/lrcp_automation_frontend.git) repositry.
+3. Clone [this](https://github.com/rgaikar/react-ts-okta-mui-starterkit.git) repositry.
 
 In the cloned project directory, you can run:
 
