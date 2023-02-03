@@ -1,4 +1,4 @@
-# React Okta Serveless Starterkit
+# React TS Okta MUI Starterkit
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -7,7 +7,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 - [About The App](#about-the-app)
 - [Technologies](#technologies)
 - [Setup](#setup)
-- [Deployment](#deployment)
 - [License](#license)
 
 ## About The App
@@ -81,41 +80,3 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Deployment
-
-### Environments
-
-User can create different environments on the Github
-
-Github -> Settings -> Environment
-
-We have created three different environemnts for LRCP application deployment
-
-1. Development
-2. Staging
-3. Production
-
-### Enviornment Variables
-
-Environment variables can be directly added to Github Respository for a particular environment.
-
-Github -> Setting -> Environemnt
-
-- **REACT_APP_API_ENDPOINT_URL**: AWS API Gateway URL
-- **REACT_APP_ISSUER**: OKTA APP ISSUER URL
-- **REACT_APP_CLIENT_ID**: OKTA APP Client Id
-- **AWS_CLOUDFRONT_DISTRIBUTION_ID**: AWS Clouddfront Distribution Id
-- **AWS_REGION**: AWS Region (This is the region where AWS S3 is created)
-- **AWS_ROLE_TO_ASSUME**: AWS ROLE to Deploy the build files to AWS S3 and to invalidate Cloudfront Cache
-- **AWS_S3_BUCKET** : AWS S3 bucket where frontend code will be deployed
-
-### Deploy to Development environment
-
-The deployment to development environment is automated and gets triggered from `develop` branch when a Pull Request is merged into develop.
-
-### Deploy to Staging / Production environment
-
-The deploymemt to staging / production environemnt can be triggered manually from the Github Actions. User can select the branch name and environemnt to deploy to.
-
-Github -> Actions -> Select Workflow (Manual Deploy to S3)
